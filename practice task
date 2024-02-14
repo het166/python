@@ -1,0 +1,271 @@
+
+#1. Reverse the given string (You can take any string)
+def reverse_string(input_string):
+    return input_string[::-1]
+
+
+input_string = "HET PATEL!"
+reversed_string = reverse_string(input_string)
+print("Original String:", input_string)
+print("Reversed String:", reversed_string)
+
+
+#2. Replace some character of the string with another character without using a loop.
+original_string = "HET PATEL!"
+modified_string = original_string.replace('E', 'X')
+print("Original String:", original_string)
+print("Modified String:", modified_string)
+
+
+#3. Find whether the character in the given string or not.
+def is_character_present(input_string, character):
+    return character in input_string
+
+input_string = "HET PATEL"
+character_to_check = 'o'
+if is_character_present(input_string, character_to_check):
+    print(f"The character '{character_to_check}' is present in the string.")
+else:
+    print(f"The character '{character_to_check}' is not present in the string.")
+
+
+
+
+
+#4. Create tuple, list and set and convert them into the different strings.
+my_tuple = (55, 66, 77, 88, 99)
+
+
+my_list = [40, 60, 80, 100, 120]
+
+
+my_set = {101, 102, 103, 104, 105}
+
+
+tuple_string = str(my_tuple)
+
+
+list_string = str(my_list)
+
+
+set_string = str(my_set)
+
+
+
+
+
+#5.Convert all the string characters to the upper and the lower case and split it with the  different methods.
+
+print("Tuple as string:", tuple_string)
+print("List as string:", list_string)
+print("Set as string:", set_string)
+
+input_string = "CSPIT , CHARUSAT"
+
+upper_case_string = input_string.upper()
+
+lower_case_string = input_string.lower()
+
+split_by_comma_space = input_string.split(', ')
+
+split_by_space = input_string.split()
+
+
+print("Original String:", input_string)
+print("Upper Case String:", upper_case_string)
+print("Lower Case String:", lower_case_string)
+print("Split by comma and space:", split_by_comma_space)
+print("Split by space:", split_by_space)
+
+
+
+
+
+# 6.Perform the following operations to the tuple and the list
+#Find max, min, len, sum
+
+
+my_tuple = (55, 66, 77, 88, 99)
+my_list = [40, 60, 80, 100, 120]
+
+
+max_tuple = max(my_tuple)
+max_list = max(my_list)
+
+min_tuple = min(my_tuple)
+min_list = min(my_list)
+
+
+len_tuple = len(my_tuple)
+len_list = len(my_list)
+
+
+sum_tuple = sum(my_tuple)
+sum_list = sum(my_list)
+
+print("Tuple:", my_tuple)
+print("List:", my_list)
+print("Max of Tuple:", max_tuple)
+print("Max of List:", max_list)
+print("Min of Tuple:", min_tuple)
+print("Min of List:", min_list)
+print("Length of Tuple:", len_tuple)
+print("Length of List:", len_list)
+print("Sum of Tuple:", sum_tuple)
+print("Sum of List:", sum_list)
+
+
+
+
+
+#7. Copy one list to the another list without using the copy command.
+original_list = [40, 60, 80, 100, 120]
+copied_list = list(original_list)
+
+
+
+#8.Perform below task as instructed
+student = {
+    'name': 'HET',
+    'age': 21,
+    'grade': 'A'
+}
+
+
+print("Age of the student:", student['age'])
+
+
+
+
+if 'gender' in student:
+    print("The 'gender' key is present in the student dictionary.")
+else:
+    print("The 'gender' key is not present in the student dictionary.")
+    student['gender'] = 'Male'
+
+
+print("Updated student dictionary:", student)
+
+
+
+
+#9. Perform below task as instructed
+
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+union_set = set1.union(set2)
+print("Union of set1 and set2:", union_set)
+
+intersection_set = set1.intersection(set2)
+print("Intersection of set1 and set2:", intersection_set)
+
+difference_set = set1.difference(set2)
+print("Difference of set1 and set2 (set1 - set2):", difference_set)
+
+if set1.issubset(set2):
+    print("set1 is a subset of set2.")
+else:
+    print("set1 is not a subset of set2.")
+
+
+
+
+#10.Perform below task as instructed
+
+student_subjects = {
+    'math': {'Vishnu', 'Vedant', 'Meet'},
+    'science': {'Vishnu', 'Aditya', 'Shubham'}
+}
+
+student_subjects['math'].add('Ashwin')
+
+
+student_subjects['science'].remove('Shubham')
+
+
+common_students = student_subjects['math'].intersection(student_subjects['science'])
+print("Students who take both 'math' and 'science':", common_students)
+
+
+countries = {
+    'USA': {'New York': 8398748, 'Los Angeles': 3990456, 'Chicago': 2705994},
+    'Australia': {'Melbourne': 24183300, 'Sydney': 21542000, 'Perth': 14043000},
+    'India': {'Mumbai': 18414288, 'Delhi': 11034555, 'Bangalore': 8443675}
+}
+
+
+print("Nested Dictionary - Countries and Cities with Populations:", countries)
+
+
+
+
+
+
+#11.Create two lists, one containing elements at even indices and the other containing elements at odd indices from the original list.
+original_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+even_indices_list = original_list[::2]
+
+
+odd_indices_list = original_list[1::2]
+
+print("Original List:", original_list)
+print("Elements at even indices:", even_indices_list)
+print("Elements at odd indices:", odd_indices_list)
+
+
+
+
+
+
+#12.Use tuple packing and unpacking to swap the values of two variables without using a temporary variable.
+a = 84
+b = 47
+
+a, b = b, a
+
+
+print("a after swapping:", a)
+print("b after swapping:", b)
+
+
+
+
+
+#13.Check if a given list is a palindrome using slicing.
+def is_palindrome(input_list):
+
+    return input_list == input_list[::-1]
+
+test_list_1 = [1, 2, 3, 2, 1]
+test_list_2 = [1, 2, 3, 4, 5]
+
+print("Test List 1:", test_list_1)
+if is_palindrome(test_list_1):
+    print("Test List 1 is a palindrome.")
+else:
+    print("Test List 1 is not a palindrome.")
+
+print("Test List 2:", test_list_2)
+if is_palindrome(test_list_2):
+    print("Test List 2 is a palindrome.")
+else:
+    print("Test List 2 is not a palindrome.")
+
+
+
+
+
+
+#14. concatenate two tuples without using the + operator.
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+
+
+concatenated_tuple = tuple(tuple1) + tuple(tuple2)
+
+
+print("Concatenated Tuple:", concatenated_tuple)
+
