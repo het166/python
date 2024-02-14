@@ -1,0 +1,80 @@
+ 
+  PRACTICAL 2 
+
+A)	Create a list and apply methods (append, extend, remove, reverse),arrange created list in ascending and descending order.
+
+my_list = [7, 2, 8, 3, 12]
+
+
+my_list.append(14)
+print("After appending 12:", my_list)
+
+
+my_list.extend([7, 8, 3])
+print("After extending with [7, 8, 3]:", my_list)
+
+
+my_list.remove(2)
+print("After removing the first occurrence of 2:", my_list)
+
+my_list.reverse()
+print("After reversing:", my_list)
+
+my_list.sort()
+print("Ascending order:", my_list)
+
+my_list.sort(reverse=True)
+print("Descending order:", my_list)
+
+
+
+B) List1 = [1, 2, 3, 4, ["python", "java", "c++", [10,20,30]], 5, 6, 7, ["apple",      "banana","orange"]] From above list get word “orange” and “Python” &     repeat this list five times
+without using loops.
+
+
+
+List1 = [1, 2, 3, 4, ["python", "java", "c++", [10, 20, 30]], 5, 6, 7, ["apple", "banana", "orange"]]
+
+word_orange = List1[-1][-1]
+word_python = List1[4][0]
+
+
+repeated_list = [List1] * 5
+
+print("Word 'orange':", word_orange)
+print("Word 'Python':", word_python)
+print("Repeated list five times:", repeated_list)
+
+
+
+
+C) Create a list and copy it using slice function:
+
+original_list = [1, 2, 3, 4, 5]
+
+
+copied_list = original_list[:]
+
+print("Original list:", original_list)
+print("Copied list:", copied_list)
+
+
+
+
+D) Create a tuple and apply different type of mathematical operation on it (Sum, Maximum, minimum etc.).:
+
+my_tuple = (5, 3, 8, 2, 7)
+
+
+sum_tuple = sum(my_tuple)
+
+max_tuple = max(my_tuple)
+
+
+min_tuple = min(my_tuple)
+
+print("Tuple:", my_tuple)
+print("Sum of elements:", sum_tuple)
+print("Maximum element:", max_tuple)
+print("Minimum element:", min_tuple)
+
